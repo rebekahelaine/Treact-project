@@ -104,7 +104,7 @@ li {
     letter-spacing: 0.35px;
     position: relative;
     border-bottom: 2px solid transparent;
-    transition: 300ms;
+    transition: all 300ms ease;
     margin: 0px 24px;
 }
 
@@ -112,14 +112,10 @@ li {
     color: rgb(255, 255, 255);
     background-color: rgb(100, 21, 255);
     line-height: 1.5;
-    margin: 2px 0 0;
+    margin-top: 2px;
     padding: 10px 32px;
     border-radius: 9999px;
-    border-width: medium;
-    border-style: none;
-    border-color: currentcolor;
-    border-image: initial;
-    transition: 300ms;
+    border:none;
 }
 
 .btn__menu {
@@ -132,11 +128,10 @@ li {
 }
 
 .menu__backdrop {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     height: 378px;
     margin: 24px 16px;
     padding: 32px;
@@ -150,6 +145,7 @@ li {
     opacity: 0;
     visibility: hidden;
     transition: all 300ms ease;
+    transform: translateX(50%);
 }
 
 .menu--open .menu__backdrop {
@@ -180,10 +176,20 @@ li {
     border-bottom: 2px solid transparent;
 }
 
+.menu__link--primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(100, 21, 255);
+    line-height: 1.5;
+    margin-top: 2px;
+    padding: 10px 32px;
+    border-radius: 9999px;
+    border:none;
+}
+
 .btn__menu--close {
     position: absolute;
-    right: 20px;
-    top: 10px;
+    top: 24px;
+    right: 18px;
     padding: 8px;
 }
 
@@ -194,17 +200,27 @@ RESPONSIVE DESIGN
 
 */
 
+@media (max-width: 1280px) {
+    
+}
+
 @media (max-width: 1024px) {
+    .nav__links {
+        display: none;
+    } 
+
     .btn__menu {
         display: block;
     }
 }
 
-@media (max-width: 550px) {
-    .nav__links {
-        display: none;
+@media (max-width:768px) {
+    .row {
+        flex-wrap: wrap;
     }
+}
 
+@media (max-width: 550px) {
     .btn__menu {
         display: block;
     }
