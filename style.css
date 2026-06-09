@@ -60,6 +60,7 @@ nav {
 .nav__row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav__logo {
@@ -204,6 +205,16 @@ LANDING PAGE
     display: flex;
     flex-direction: column;
     width: 40%;
+}
+
+.header__customers--title {
+    margin: 48px 0 0;
+    font-weight: 700;
+    color: #A0AEC0;
+}
+
+.header__customers {
+    margin-top: 16px;
 }
 
 .header__img {
