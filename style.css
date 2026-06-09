@@ -194,6 +194,22 @@ li {
     padding: 8px;
 }
 
+/*
+
+LANDING PAGE
+
+*/
+
+.header__description {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.header__img {
+    width: 60%;
+}
+
 
 /*
 
