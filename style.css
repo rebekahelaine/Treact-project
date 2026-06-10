@@ -21,6 +21,12 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    padding: 96px 0;
 }
 
 .purple {
@@ -207,6 +213,22 @@ LANDING PAGE
     width: 40%;
 }
 
+.header__description--para {
+    margin: 32px 0;
+}
+
+.header__email--input {
+    width: 100%;
+    border-radius: 500px;
+    border: 2px solid rgb(229, 231, 235);
+    padding: 20px 192px 20px 32px;
+    color: rgb(36, 62, 99);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
 .header__customers--title {
     margin: 48px 0 0;
     font-weight: 700;
@@ -217,8 +239,12 @@ LANDING PAGE
     margin-top: 16px;
 }
 
-.header__img {
+.header__img--wrapper {
     width: 60%;
+}
+
+.header__img {
+    width: 100%;
 }
 
 
