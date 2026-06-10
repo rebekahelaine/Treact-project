@@ -258,11 +258,14 @@ LANDING PAGE
 .header__customers--title {
     margin: 48px 0 0;
     font-weight: 700;
+    font-size: 12px;
     color: #A0AEC0;
 }
 
 .header__customers {
     margin-top: 16px;
+    padding-right: 128px;
+    opacity: 0.5;
 }
 
 .header__img--wrapper {
