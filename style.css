@@ -408,6 +408,58 @@ QUALITY WORK
 
 /*
 
+STEPS
+
+*/
+
+.steps__description, .steps__img--wrapper {
+    width: 50%;
+}
+
+.steps__img {
+    width: 100%;
+}
+
+.steps__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.step {
+    display: flex; 
+    margin-top: 32px;
+}
+
+.step__no {
+    color: #cbd5e0;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.step__description {
+    display: flex; 
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.step__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #243e63;
+    line-height: 1;
+}
+
+.step__para {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #718096;
+    font-weight: 500;
+    line-height: 2;
+}
+
+/*
+
 RESPONSIVE DESIGN
 
 */
