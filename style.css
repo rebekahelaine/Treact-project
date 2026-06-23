@@ -402,6 +402,10 @@ QUALITY WORK
     max-width: 576px;
 }
 
+.quality__img {
+    width: 100%;
+}
+
 /*
 
 RESPONSIVE DESIGN
