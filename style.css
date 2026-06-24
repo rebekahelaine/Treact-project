@@ -472,7 +472,39 @@ VALUES
 
 */
 
+.values__list, .value__title {
+    display: flex;
+    flex-direction: row;
+}
 
+.value {
+    margin-top: 32px;
+    margin-right: 32px;
+}
+
+.value:nth-child(1) .value__img--wrapper {
+    background-color: #9ae6b4;
+}
+
+.value:nth-child(2) .value__img--wrapper {
+    background-color: #feb2b2;
+}
+
+.value__img--wrapper {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+}
+
+.value__name {
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #243e63;
+}
 
 /*
 
