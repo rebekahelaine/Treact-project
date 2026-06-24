@@ -93,7 +93,7 @@ nav {
     letter-spacing: 0.6px;
 }
 
-ul {
+.nav__link ul {
     display: flex;
 }
 
@@ -842,6 +842,37 @@ CTA GET STARTED BANNER
     background-color: rgba(247, 250, 252);
     color: rgba(100, 21, 255);
 }
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+    padding: 96px 32px;
+    background-color: rgb(100, 21, 255);
+    margin-bottom: -32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__column--title {
+    color: #f7fafc;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.footer__column--link a {
+    color: #f7fafc;
+}
+
 /*
 
 RESPONSIVE DESIGN
@@ -849,7 +880,9 @@ RESPONSIVE DESIGN
 */
 
 @media (max-width: 1280px) {
-    
+    footer {
+        padding: 80px 32px;
+    }
 }
 
 @media (max-width: 1024px) {
