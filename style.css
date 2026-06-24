@@ -675,11 +675,11 @@ TESTIMONIALS
 
 */
 
-.testimonial__img, .testimonial__description {
+.testimonials__img, .testimonials__description {
     width: 50%;
 }
 
-.testimonial__img--wrapper {
+.testimonials__img--wrapper, .testimonials__img--wrapper img {
     width: 100%;
 }
 
