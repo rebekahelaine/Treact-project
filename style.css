@@ -22,8 +22,6 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
 }
 
 .container {
@@ -288,7 +286,7 @@ header .row {
 }
 
 .header__img--wrapper {
-    width: 60%;
+    width: calc(100% - 40%);
 }
 
 .header__img {
@@ -337,11 +335,12 @@ FEATURES - SERVICES
 .services {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .service {
     display: flex;
-    width: calc(100%/3);
+    align-items: flex-start;
     padding: 32px 24px;
 }
 
@@ -385,6 +384,12 @@ QUALITY WORK
 
 */
 
+#quality .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .btn {
     width: 150px;
     background-color: #6415ff;
@@ -421,6 +426,7 @@ QUALITY WORK
     text-align: left;
     line-height: 1.625;
     max-width: 576px;
+    text-align: center;
 }
 
 .quality__img {
@@ -437,6 +443,11 @@ STEPS
     width: 50%;
 }
 
+.steps__img--wrapper {
+    display: flex;
+    position: relative;
+}
+
 .steps__img {
     width: 100%;
 }
@@ -448,6 +459,7 @@ STEPS
 
 .step {
     display: flex; 
+    align-items: flex-start;
     margin-top: 32px;
 }
 
@@ -458,10 +470,16 @@ STEPS
     line-height: 1;
 }
 
+.steps__description {
+    padding: 32px 0;
+    margin-left: 64px;
+}
+
 .step__description {
     display: flex; 
     flex-direction: column;
     margin-left: 24px;
+    max-width: 320px;
 }
 
 .step__title {
@@ -484,6 +502,10 @@ STEPS
 VALUES
 
 */
+
+.values__description, .values__img {
+    width: 50%;
+}
 
 .values__list, .value__title {
     display: flex;
@@ -524,6 +546,8 @@ VALUES
     color: #718096;
     line-height: 1.625;
 }
+
+
 
 /*
 
@@ -1040,10 +1064,13 @@ RESPONSIVE DESIGN
         align-items: center;
     }
 
+    .header__customers--title, .header__img--wrapper {
+        margin-top: 48px;
+    }
+
     .header__description, .header__img--wrapper {
         width: 100%; 
         max-width: 512px;
-        margin: 0 auto;
     }
 
     .header__description {
@@ -1055,7 +1082,7 @@ RESPONSIVE DESIGN
 
     .header__customers {
         padding-right: 0;
-    }
+    }  
 
     .services {
         max-width: 768px;
@@ -1066,8 +1093,9 @@ RESPONSIVE DESIGN
         margin: 0 16px;
     }
 
-    .service__img--wrapper {
-
+    .quality__description {
+        margin-right: 0;
+        padding-right: 48px;
     }
 }
 
@@ -1076,12 +1104,49 @@ RESPONSIVE DESIGN
         flex-wrap: wrap;
     }
 
+    #quality .row, #values .row {
+        flex-direction: column-reverse;
+    }
+
+    #steps .row, #testimonials .row {
+        flex-direction: column;
+    }
+
+    .quality__description, .quality__img--wrapper, .steps__description, .steps__img--wrapper, .values__description, .values__img, .tesimonials__description, .testimonials__img {
+        width: 100%;
+        max-width: 448px;
+    }
+
+    .quality__description, .steps__description, .values__description, .testimonials__description {
+        padding: 0;
+        margin-top: 64px;
+        text-align: center;
+    }
+
+    .section__title {
+        font-size: 36px;
+    }
+
     .services {
         justify-content: center;
     }
 }
 
 @media (max-width: 640px) {
+    .section__title {
+        font-size: 30px;
+    }
+
+    .service {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+     .btn {
+        line-height: 1.5;
+    }
+    
     .plan__price {
         font-size: 36px;
     }
