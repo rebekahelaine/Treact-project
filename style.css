@@ -1196,6 +1196,11 @@ RESPONSIVE DESIGN
         padding: 0;
         margin-top: 64px;
         text-align: center;
+        align-items: center;
+    }
+
+    #quality .section__para, #values .section__para {
+        text-align: center;
     }
 
     .section__title {
