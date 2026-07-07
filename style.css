@@ -782,6 +782,8 @@ TESTIMONIALS
 
 .testimonials__description {
     margin-left: 64px;
+    display: flex;
+    flex-direction: column;
 }
 
 .testimonial {
@@ -1117,6 +1119,10 @@ RESPONSIVE DESIGN
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
+    .testimonials__description {
+        width: calc(100% - 40%)
+    }
     
     footer {
         padding: 80px 32px;
@@ -1200,6 +1206,10 @@ RESPONSIVE DESIGN
     .plan {
         margin-right: 0px;
     }
+
+    .testimonials__description {
+        padding-left: 48px;
+    }
 }
 
 @media (max-width:768px) {
@@ -1270,6 +1280,10 @@ RESPONSIVE DESIGN
 
     .value__title {
         justify-content: center;
+    }
+
+    .testimonials__description {
+        padding-left: 0;
     }
 
 }
