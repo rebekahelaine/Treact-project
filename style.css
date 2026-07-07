@@ -622,6 +622,7 @@ PLAN-PRICING
    flex-wrap: wrap;
    flex-direction: row;
    justify-content: space-between;
+   gap: 16px;
    width: 100%;
 }
 
@@ -631,7 +632,7 @@ PLAN-PRICING
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: calc(100%/3);
+    width: calc((100% - 32px) / 3);
     max-width: 24rem;
     border-radius: 0.5rem;
     padding-left: 2rem;
@@ -934,6 +935,7 @@ CTA GET STARTED BANNER
     line-height: 1.5;
     letter-spacing: 0.025;
     margin: 1px;
+    width: auto;
 }
 
 .start__button:nth-child(1) {
