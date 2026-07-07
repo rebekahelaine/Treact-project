@@ -355,6 +355,10 @@ FEATURES - SERVICES
     margin: 0 auto;
 }
 
+#features .section__title, #pricing .section__title {
+    text-align: center;
+}
+
 .services {
     margin-top: 40px;
     display: flex;
@@ -1108,6 +1112,11 @@ RESPONSIVE DESIGN
     .header__customers {
         padding-right: 64px;
     }
+
+    .plan__bottom {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
     
     footer {
         padding: 80px 32px;
@@ -1182,6 +1191,15 @@ RESPONSIVE DESIGN
         max-width: 20rem;
         flex-direction:column;
     }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        margin-right: 0px;
+    }
 }
 
 @media (max-width:768px) {
@@ -1215,6 +1233,11 @@ RESPONSIVE DESIGN
 
     .section__title {
         font-size: 36px;
+    }
+
+    .section__para {
+        font-size: 14px;
+        text-align: center;
     }
 
     .services {
@@ -1278,6 +1301,7 @@ RESPONSIVE DESIGN
 
     .section__title {
         line-height: 1.25;
+        font-size: 30px;
     }
 
     #features .section__title, #pricing .section__title {
@@ -1304,5 +1328,9 @@ RESPONSIVE DESIGN
 
     .plan__price {
         font-size: 36px;
+    }
+
+    .plan__bottom {
+        padding: 2rem 1rem;
     }
 }
